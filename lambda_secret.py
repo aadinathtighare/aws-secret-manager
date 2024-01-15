@@ -6,7 +6,7 @@ from botocore.exceptions import ClientError
 def lambda_handler(event, context):
     # Specify the name of your secret in AWS Secrets Manager
     environment = event['env']
-    secret_name = "adinath/%s/key" % environment
+    secret_name = "adinatht/%s/key" % environment
     region_name = "us-east-1"
  
     # Create a Secrets Manager client
